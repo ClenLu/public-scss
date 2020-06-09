@@ -1,0 +1,14 @@
+@import "../mixins";
+@import "../builds";
+@import "../variables";
+
+@include build-colors("primary", $color-primary);
+@include build-colors("danger", $color-danger);
+@include build-colors("warning", $color-warning);
+@include build-colors("progress", $color-progress);
+@include build-colors("hint", $color-hint);
+@include build-colors("help", $color-help);
+@include build-colors("text", $color-text);
+@include build-colors("text-light", $color-text-light);
+@include build-colors("text-dark", $color-text-dark);
+@include build-colors("bg-dark", $color-bg-dark);

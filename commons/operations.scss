@@ -1,0 +1,29 @@
+@import "../variables";
+
+.tz-action:hover {
+  color: $color-primary;
+  cursor: pointer;
+}
+
+.tz-action-danger {
+  color: $color-danger;
+  cursor: pointer;
+  :hover {
+    color: $color-danger-dark;
+  }
+}
+
+.form-alert {
+  display: inline-block;
+  margin-top: 4px;
+  position: relative;
+  background-color: $color-danger;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1em;
+  padding: 5px 0.75em;
+  border-radius: 3px;
+  &.position-absolute {
+    position: absolute;
+  }
+}

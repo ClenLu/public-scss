@@ -1,0 +1,58 @@
+@import "mixins";
+@import "variables";
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+input, button, textarea
+{
+  font-family: inherit;
+}
+
+li
+{
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  color: $color-text-dark;
+  font-weight: normal;
+}
+// 链接样式
+a, .link
+{
+  color: #3cc8b4;
+  cursor: pointer;
+  text-decoration: none;
+  &:visited
+  {
+    //color: #3cc8b4;
+  }
+  &:hover
+  {
+    color: #2f9392;
+  }
+  &:focus {
+  text-decoration: none!important;
+  }
+}
+// 默认字体样式设置..
+body
+{
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  // 字体平滑度
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: $font-weight-normal;
+  color: $color-text;
+  line-height: $line-height;
+}
