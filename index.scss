@@ -1,7 +1,10 @@
 @import "reset";
-
 @import "commons/layouts";
 @import "commons/colors";
 @import "commons/texts";
 @import "commons/operations";
 @import "commons/attributes";
+
+[user]
+	name = yourName
+	email = yourEmail
