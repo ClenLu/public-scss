@@ -25,6 +25,24 @@
   }
 }
 
+// 生成尺寸类 .w-200 .h-200 .w-50p ...
+@mixin build-sizes($sizes, $percents) {
+  @each $size in $sizes {
+    .w-#{$size} {
+      width: #{$size}px;
+    }
+    .h-#{$size} {
+      height: #{$size}px;
+    }
+  }
+  // 只生成百分比宽度，不生成百分比高度，见 docs/adr/0001-size-scale.md
+  @each $percent in $percents {
+    .w-#{$percent}p {
+      width: #{$percent}%;
+    }
+  }
+}
+
 @mixin build-spaces($space) {
   .mt-#{$space} {
     margin-top: #{$space}px;

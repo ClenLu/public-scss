@@ -1,0 +1,5 @@
+@import "../variables";
+@import "../builds";
+
+// 宽高尺寸类，刻度定义见 variables.scss
+@include build-sizes($size-scale, $size-percents);

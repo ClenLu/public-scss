@@ -7,6 +7,7 @@
 │   ├── colors.scss 颜色相关的class
 │   ├── layouts.scss 布局排版相关的class
 │   ├── operations.scss 交互相关的class
+│   ├── sizes.scss 宽高尺寸相关的class
 │   └── texts.scss 字体文本相关的class(字体大小，文本间隔...)
 ├── builds.scss build 工具方法，用来生成公用class
 ├── index.scss 入口文件，项目中引用这个文件可以导入所有基础样式和公用class
@@ -179,6 +180,19 @@ import from scss
   overflow-y: auto;
 }
 ```
+
+#### sizes.scss
+宽高尺寸相关的class
+
+```css
+// 宽度 size 可选值 0、4、8、12、16、20、24、32、40、48、56、64、80、96、120、160、200、240、280、320、400、480、560、640、800、960、1200
+.w-[size] { width: [size]px }
+// 高度 size 可选值同上
+.h-[size] { height: [size]px }
+// 百分比宽度 percent 可选值 25 33 50 66 75 100
+.w-[percent]p { width: [percent]% }
+```
+注：百分比高度类不提供，需要满高时用 `.full-size`，原因见 `docs/adr/0001-size-scale.md`。
 
 #### texts.scss 
 字体文本相关的class(字体大小，文本间隔...)

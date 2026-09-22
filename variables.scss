@@ -67,3 +67,8 @@ $font-weight-bold: 600;
 $transition-duration-slow: 0.5s;
 $transition-duration: 0.4s;
 $transition-duration-fast: 0.3s;
+
+// 尺寸刻度，小值段密、大值段疏，见 docs/adr/0001-size-scale.md
+$size-scale: 0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96, 120, 160, 200, 240, 280, 320, 400, 480, 560, 640, 800, 960, 1200;
+// 百分比宽度刻度，只用于宽度
+$size-percents: 25, 33, 50, 66, 75, 100;
